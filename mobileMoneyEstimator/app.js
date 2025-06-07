@@ -1,4 +1,5 @@
 function estimateTransactionFee(amountToSend) {
+    // initiallize fee avriable
     let fee;
     if (amountToSend * (1.5/100) < 10) {
         fee = 10
@@ -17,10 +18,12 @@ function processInput() {
     while (true) {
         const amount = prompt("Unatuma Ngapi? (KES):")
 
+        // if the user closes the prompt
         if (amount === null) {
             return;
         }
 
+        // convert the input from text to number and validate
         const amountToSend = parseFloat(amount)
         if (isNaN(amount)) {
             estimateTransactionFee(amountToSend)

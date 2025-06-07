@@ -14,12 +14,14 @@ function processInput() {
     while (true) {
         const distance = prompt("Unafika wapi Mkubwa? Kilometer ngapi?:");
 
+        // if the user closes the prompt
         if (distance === null) {
             return;
         }
 
         const convertedDistance = parseFloat(distance);
-
+        
+        // convert the input from text to number and validate
         if (isNaN(convertedDistance)) {
             alert("Hizo ni gani tena??");
         } else {

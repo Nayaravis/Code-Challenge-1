@@ -36,6 +36,7 @@ function processInput() {
         
         const number = parseFloat(input);
         
+        // convert the input from text to number and validate
         if (isNaN(number)) {
             alert("Numbers only please");
         } else {
