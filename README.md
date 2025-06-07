@@ -22,4 +22,4 @@ This repository contains the files for all parts of the Phase 1/Week 1 Code Chal
 3. Calculates the total amount that will be debited.
 4. Prints the results to the console.
 
-To run these challenges, open the `.html` files for any of them in the browser
+To run these challenges, clone the repository and open the `.html` files in any of the challenge folders in the browser
