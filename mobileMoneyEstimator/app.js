@@ -23,7 +23,7 @@ function processInput() {
             return;
         }
 
-        // convert the input from text to number and validate
+        // convert the input from text to a number and validate
         const amountToSend = parseFloat(amount)
         if (isNaN(amount)) {
             estimateTransactionFee(amountToSend)
@@ -31,3 +31,5 @@ function processInput() {
         }
     }
 }
+
+processInput();
